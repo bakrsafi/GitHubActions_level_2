@@ -73,6 +73,16 @@ WSGI_APPLICATION = 'GitHubActions_level_2.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
+
+SOME_SETTING = "هنا سطر طويل جداً بحيث يتجاوز 88 حرف"
+
+# بعد
+SOME_SETTING = (
+    "هنا سطر طويل جداً بحيث يتجاوز "
+    "88 حرف"
+)
+
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
