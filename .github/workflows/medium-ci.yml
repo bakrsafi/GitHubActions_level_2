@@ -27,6 +27,7 @@ jobs:
         echo DJANGO_SECRET_KEY=testsecretkey >> $GITHUB_ENV
         echo DEBUG=False >> $GITHUB_ENV
 
+
         
     - name: Django system check
       run: python manage.py check
@@ -35,7 +36,7 @@ jobs:
       run: black --check . || true
 
 
-      
+
     - name: Run Flake8
       run: flake8 . || true
 
