@@ -8,8 +8,12 @@ jobs:
     test:
         runs-on: ubuntu-latest
         steps:
-            - uses: actions/checkout@v3
 
-            
             - name: print hello world
               run: echo "Hello, world!"
+
+            - name: Check out repository code
+              uses: actions/checkout@v3
+
+            - name: ls
+              run: ls
