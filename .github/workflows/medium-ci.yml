@@ -24,11 +24,10 @@ jobs:
 
     - name: Set environment variables
       run: |
-        echo DJANGO_SECRET_KEY=your_secret_key >> $GITHUB_ENV
+        echo DJANGO_SECRET_KEY=testsecretkey >> $GITHUB_ENV
         echo DEBUG=False >> $GITHUB_ENV
 
         
-
     - name: Django system check
       run: python manage.py check
 
